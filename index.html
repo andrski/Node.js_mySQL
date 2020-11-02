@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test Node mySQL</title>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+  <a href="/create.html">Выбрать пользователя</a>
+    <form action="/create" method="POST" class="railway">
+        <div class="stripes-block">
+          <div class="line"></div>
+        </div>
+        <h3>Создать БазуДанных</h3>
+        <div class="form-group">
+          
+        </div>
+        <div class="submit-block">
+          <div class="submit-button">
+            <i class="fa fa-train" aria-hidden="true"></i><br>
+            <input type="submit" value="Создать БД и таблицу">
+          </div>
+        </div>
+      </form>
+
+      <form action="/add" method="POST" class="railway" encType="multipart/form-data">
+        <div class="stripes-block">
+          <div class="line"></div>
+        </div>
+        <h3>Введите данные</h3>
+        <div class="form-group">
+          <input type="text" id="name" name="firstName"><label for="name">Имя</label>
+          <input type="text" id="pass"  name="secondName"><label for="pass">Фамилия</label>
+          <input type="file" id="picture" name="image" accept="image/jpeg, image/png"><label for="picture">Изображение</label>
+        </div>
+        <div class="submit-block">
+          <div class="submit-button">
+            <i class="fa fa-train" aria-hidden="true"></i><br>
+            <input type="submit" value="Создать пользователя">
+          </div>
+        </div>
+      </form>
+
+      <form action="/delete" method="GET" class="railway">
+        <div class="stripes-block">
+          <div class="line"></div>
+        </div>
+        <h3>Удаление</h3>
+        <div class="form-group">
+          
+        </div>
+        <div class="submit-block">
+          <div class="submit-button">
+            <i class="fa fa-train" aria-hidden="true"></i><br>
+            <input type="submit" value="Удалить БД">
+          </div>
+        </div>
+      </form>
+
+      <form action="/close" method="GET" class="railway">
+        <div class="stripes-block">
+          <div class="line"></div>
+        </div>
+        <h3>Закрвть соединение БД</h3>
+        <div class="form-group">
+          
+        </div>
+        <div class="submit-block">
+          <div class="submit-button">
+            <i class="fa fa-train" aria-hidden="true"></i><br>
+            <input type="submit" value="Закрыть соединение">
+          </div>
+        </div>
+      </form>
+      
+</body>
+</html>
