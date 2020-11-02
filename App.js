@@ -101,7 +101,7 @@ app.post('/find', async (req, res)=>{
             var bufferBase64 = buffer.toString('base64')
             
            //res.set({"headers" :{  'Content-Type': 'application/json;charset=utf-8'  }})
-            res.write(`<p>${result[0].firstName}</p><br><p>${result[0].secondName}</p><br><img src="${bufferBase64}" alt="no load" />`)  
+            res.write(`<p>${result[0].firstName}</p><br><p>${result[0].secondName}</p><br><img style='display:block; width:100px;height:100px;' src="data:image/jpeg,image/png;base64,${bufferBase64}" alt="no load" />`)  
         }
     })
     
